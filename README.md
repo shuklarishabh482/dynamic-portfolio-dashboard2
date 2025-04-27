@@ -31,8 +31,7 @@
 
  5 Git & GitHub for version control
 
-
-
+ 
  Project Structure
 
 src/
@@ -66,7 +65,6 @@ npm install
 # 4. Run the development server
 npm run dev
 
-
 Important Notes : 
 
 API Key is hardcoded into googleFinance.js.
@@ -78,7 +76,6 @@ Stock Data might be slightly delayed because it's sourced from free APIs.
 Real-time updates use setInterval, no WebSocket (to avoid complexity).
 
 Error Handling: If API fails, an error banner will appear on screen.
-
 
 Jyotishwar Raj Shukla 
 
