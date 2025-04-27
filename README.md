@@ -55,7 +55,7 @@ src/
 
 
 # 1. Clone this repository
-git clone https://github.com/your-username/dynamic-portfolio-dashboard.git
+git clone https://github.com/shuklarishabh482/dynamic-portfolio-dashboard2
 
 # 2. Move into the folder
 cd dynamic-portfolio-dashboard
