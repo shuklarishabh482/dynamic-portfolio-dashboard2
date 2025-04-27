@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+ Features : 
+ 1  Live Stock Prices (Auto-refresh every 15 seconds)
 
-First, run the development server:
+ 2  Sector-wise Grouping of Holdings
 
-```bash
+ 3  Gain/Loss Indicators with Green (Profit) and Red (Loss) coloring
+
+4  Portfolio Percent Calculation (Dynamic, based on total investment)
+
+  5 Fast & Optimized:
+
+ 6 useCallback, useMemo, and React.memo used to minimize re-renders
+
+  7 Error Handling:
+
+ 8 Clean error banners if data fetching fails
+
+  9 Responsive across devices
+
+ 10 No Tailwind CSS, pure globals.css for full control
+
+ Tech Stack : 
+1 Next.js 15 (App Router)
+
+ 2 React 18
+
+ 3 CSS Modules (Pure CSS)
+
+ 4 Google Finance API (through scraping)
+
+ 5 Git & GitHub for version control
+
+
+
+ Project Structure
+
+src/
+ ├── app/
+ │    └── page.jsx (Main Dashboard)
+ ├── components/
+ │    ├── PortfolioTable.js
+ │    ├── ErrorBanner.js
+ ├── hooks/
+ │    └── useFetchPortfolioData.js
+ ├── lib/
+ │    └── googleFinance.js
+ ├── styles/
+ │    └── globals.css
+ ├── pages/
+ │    └── api/
+ │         └── fetchPortfolioData.js
+ └── layout.js (App layout)
+
+
+
+# 1. Clone this repository
+git clone https://github.com/your-username/dynamic-portfolio-dashboard.git
+
+# 2. Move into the folder
+cd dynamic-portfolio-dashboard
+
+# 3. Install dependencies
+npm install
+
+# 4. Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Important Notes : 
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+API Key is hardcoded into googleFinance.js.
 
-## Learn More
+Portfolio Percent is calculated dynamically in the UI.
 
-To learn more about Next.js, take a look at the following resources:
+Stock Data might be slightly delayed because it's sourced from free APIs.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Real-time updates use setInterval, no WebSocket (to avoid complexity).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Error Handling: If API fails, an error banner will appear on screen.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Jyotishwar Raj Shukla 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+
+
+
